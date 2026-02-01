@@ -1,5 +1,3 @@
-# UmbracoPackageSuggest MCP Server
-
 ## What this MCP server does (in human terms)
 
 The MCP Umbraco Package Suggestor acts like a senior Umbraco architect sitting next to your codebase 👀
