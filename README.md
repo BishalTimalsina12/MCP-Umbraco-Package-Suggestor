@@ -1,10 +1,70 @@
 # UmbracoPackageSuggest MCP Server
 
-An intelligent MCP (Model Context Protocol) server that provides AI-powered package suggestions and analysis for Umbraco CMS projects. This tool analyzes your .NET/Umbraco codebase and recommends relevant NuGet packages and Umbraco marketplace extensions based on your project's architecture, business domain, and code patterns.
+## What this MCP server does (in human terms)
 
-## Overview
+The MCP Umbraco Package Suggestor acts like a senior Umbraco architect sitting next to your codebase 👀
 
-UmbracoPackageSuggest uses advanced AI analysis to understand your Umbraco project's structure, business logic, and architectural patterns. It then provides contextual package recommendations that can enhance your site's functionality, performance, and developer experience.
+It:
+
+**Scans your actual Umbraco / .NET project**
+
+**Understands:**
+- Your content structure
+- Your architectural patterns
+- Your business domain
+
+**Then intelligently suggests packages that actually make sense for your project**
+
+Not generic "top downloads".
+Not random marketplace scrolling.
+
+**Context-aware recommendations.**
+
+### Why this is different from the Marketplace
+
+The Umbraco Marketplace answers:
+> "What packages exist?"
+
+This tool answers:
+> "Which packages should you care about — and why?"
+
+#### Examples:
+- You use many Blocks → suggests block-enhancing packages
+- Heavy content editors → suggests editor UX helpers
+- Custom workflows → suggests governance & approval tools
+- Multisite / multilingual → suggests scaling & management helpers
+
+👉 It turns the Marketplace from a catalog into an **intelligent advisor**.
+
+### The real value for the community 💙
+
+ **Hidden gems get discovered**
+> Small but brilliant packages finally reach the right projects.
+
+ **Lower cognitive load for developers**
+> No more "Did we miss a package that already solves this?"
+
+ **Faster project setup & better architecture**
+> Especially for new teams or large Umbraco solutions.
+
+ **Healthier Umbraco ecosystem**
+> More usage → more feedback → more maintained packages.
+
+### Why MCP is the perfect fit here
+
+This isn't an editor feature.
+This isn't content tooling.
+
+This is a **technical intelligence layer:**
+
+- Reads code
+- Understands patterns
+- Compresses complexity
+- Suggests better decisions
+
+Exactly what MCP is meant for.
+
+> "An AI-powered MCP server that understands your Umbraco project and recommends the right community packages — so great tools don't stay hidden."
 
 ## Key Features
 
@@ -20,49 +80,23 @@ UmbracoPackageSuggest uses advanced AI analysis to understand your Umbraco proje
 
 #### `SuggestPackages`
 Analyzes a .NET/Umbraco project and suggests relevant packages with detailed reasoning.
-```json
-{
-  "projectPath": "/path/to/your/project",
-  "depth": "detailed"
-}
-```
-- `depth`: "simple" for basic suggestions, "detailed" for comprehensive analysis
 
 #### `GenerateMarketplaceMap`
 Creates an AI-driven marketplace map visualization, ranking packages by relevance, popularity, compatibility, and community score.
-```json
-{
-  "projectPath": "/path/to/your/project"
-}
-```
+
 
 #### `PerformDeepProjectAnalysis`
 Performs sophisticated deep-dive analysis of your Umbraco project, providing enterprise-level insights on architecture, code quality, performance, and strategic recommendations.
-```json
-{
-  "projectPath": "/path/to/your/project"
-}
-```
+
 
 ### Package Integration Tools
 
 #### `SimulatePackageImpact`
 Simulates "what-if" scenarios showing how your site would perform if certain packages are added.
-```json
-{
-  "projectPath": "/path/to/your/project",
-  "packageIds": ["Umbraco.Forms", "Umbraco.Commerce"]
-}
-```
+
 
 #### `GetCodeIntegrationHints`
 Provides intelligent, context-aware code integration hints based on your actual Umbraco project structure.
-```json
-{
-  "projectPath": "/path/to/your/project",
-  "packageIds": ["Umbraco.Forms"]
-}
-```
 
 ## Installation
 
